@@ -1,0 +1,35 @@
+version: "3.9"
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: development
+
+    restart: always
+    volumes:
+      - ./:/app:ro
+
+    environment:
+      - DATABASE_URL=jdbc:h2:h2:reviews
+
+    ports:
+      - "8080:8080"
+
+    depends_on:
+      - h2
+
+  h2:
+    image: oscarfonts/h2:2.0.204
+    restart: always
+
+    volumes:
+      - munchies:/opt/h2-data
+
+    ports:
+      - "81:81"
+      - "1521:1521"
+
+volumes:
+  munchies:
