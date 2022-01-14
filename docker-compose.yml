@@ -9,7 +9,7 @@ services:
 
     restart: always
     volumes:
-      - ./:/app:ro
+      - ./:/app
 
     environment:
       - DATABASE_URL=jdbc:h2:h2:reviews
