@@ -12,7 +12,7 @@ services:
       - ./:/app
 
     environment:
-      - DATABASE_URL=jdbc:h2:h2:reviews
+      - DATABASE_URL=jdbc:h2:tcp://h2:1521/reviews
 
     ports:
       - "8080:8080"
