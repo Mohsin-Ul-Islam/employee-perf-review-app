@@ -10,5 +10,4 @@ Running the project
 
 To run the project using docker-compose, execute the below command.
 
-.. code-block:: bash
-    sudo docker-compose up --build
+``sudo docker-compose up --build``
