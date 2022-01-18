@@ -10,7 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
 
-import com.munchies.dtos.AssignFeedbackDto;
+import com.munchies.reviews.dtos.AssignFeedbackDto;
 import com.munchies.reviews.models.Feedback;
 import com.munchies.reviews.models.FeedbackAssignment;
 import com.munchies.reviews.models.Review;

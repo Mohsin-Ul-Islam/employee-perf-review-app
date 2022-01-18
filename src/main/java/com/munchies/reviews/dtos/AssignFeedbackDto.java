@@ -1,4 +1,4 @@
-package com.munchies.dtos;
+package com.munchies.reviews.dtos;
 
 public class AssignFeedbackDto {
     private Long employeeId;
